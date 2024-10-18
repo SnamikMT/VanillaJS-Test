@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container">
+    <h1>Список дел</h1>
+    <div class="todo-input-group">
+        <input type="text" id="todo-input" placeholder="Введите новую задачу">
+        <button id="add-todo" class="btn">Добавить задачу</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <div class="filter-btns">
+        <button id="show-all" class="btn">Все задачи</button>
+        <button id="show-completed" class="btn">Завершённые</button>
+        <button id="show-active" class="btn">Незавершённые</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

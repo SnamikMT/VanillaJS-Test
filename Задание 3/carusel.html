@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карусель</title>
+
+    <style>
+
+        * {
+            font-family: monospace;
+        }
+
+        .crsl {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .crsl img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .crsl button {
+            width: 100px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(36, 36, 36);
+            color: #ffffff;
+            margin: 10px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel" class="crsl">
+        <img class="crsl-image" id="carousel-image" src="https://via.placeholder.com/400x300" alt="Image">
+        <br>
+        <button id="prev-btn">Назад</button>
+        <button id="next-btn">Вперед</button>
+    </div>
+
+    <script src="carusel.js"></script>
+</body>
+</html>
